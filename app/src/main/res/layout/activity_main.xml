@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="clip_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtTitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#F8F3C3"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#00FFFFFF"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/textView55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="clip_horizontal|center_horizontal"
+                        android:text="Area Triangulo"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Base:"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/txtBase"
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="Ingrese la base"
+                        android:inputType="number"
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Altura:"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/txtAltura"
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="Ingrese la altura"
+                        android:inputType="number"
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Area:"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtAreaTriangulo"
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+                        android:text="Hello World!"
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnAreaTriangulo"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:paddingBottom="10dp"
+                    android:text="Calcular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#DBFFB2"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#00FFFFFF"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/textView555"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="clip_horizontal|center_horizontal"
+                        android:text="Area Rectangulo"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView222"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Base:"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/txtBaseRec"
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="Ingrese la base"
+                        android:inputType="number"
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Altura:"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/txtAlturaRec"
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="Ingrese la altura del rectangulo"
+                        android:inputType="number"
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Area:"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtAreaRec"
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+                        android:text="Hello World!"
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnAreaRectangulo"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:paddingBottom="10dp"
+                    android:text="Calcular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FDCDCA"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#00FFFFFF"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/textView5555"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="clip_horizontal|center_horizontal"
+                        android:text="Area Circulo"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView2222"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pi:"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtpi"
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="Ingrese Pi"
+                        android:text=""
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Radio:"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/txtRadio"
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="Ingrese el radio"
+                        android:inputType="number"
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView33333"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Area:"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtAreaCirculo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hello World!"
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnAreaCirculo"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:paddingBottom="10dp"
+                    android:text="Calcular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#B7F2FA"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#00FFFFFF"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="clip_horizontal|center_horizontal"
+                        android:text="Area del Trapecio"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView2111"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Base Mayor:"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/txtBaseMayor"
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="Ingrese la base menor"
+                        android:inputType="number"
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView12345"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Base Menor:"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/txtBaseMenor"
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="Ingrese la base mayor"
+                        android:inputType="number"
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3122"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Altura:"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/txtAlturaTrap"
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="Ingrese la altura"
+                        android:inputType="number"
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3222"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Area:"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtAreaTrapecio"
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+                        android:text="Hello World!"
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnAreaTrapecio"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:paddingBottom="10dp"
+                    android:text="Calcular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

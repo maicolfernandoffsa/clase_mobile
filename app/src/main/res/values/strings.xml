@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">clase2</string>
+    <string name="titulo_app">Areas APP</string>
+    <string name="pi_value">3,1416</string>
+</resources>
