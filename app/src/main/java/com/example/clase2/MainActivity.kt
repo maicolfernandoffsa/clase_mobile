@@ -1,15 +1,21 @@
 package com.example.clase2
 
 import android.annotation.SuppressLint
+import android.app.PendingIntent.getActivity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import com.example.clase2.MainActivity2
 
 class MainActivity : AppCompatActivity() {
+
+    var tipo = 0
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -24,9 +30,14 @@ class MainActivity : AppCompatActivity() {
 
         TextAreaTriangulo.text=""
 
+
         BtnAreaTriangulo.setOnClickListener {
-            val Areatriangulo = Editaltura.text.toString().toInt() * Editbase.text.toString().toInt() /2
-            TextAreaTriangulo.text= Areatriangulo.toString()
+            tipo = 1
+           // var area = areas( Editbase.text.toString().toDouble(), Editaltura.text.toString().toDouble(), 0.0, tipo)
+           // TextAreaTriangulo.text= area.toString()
+            val main2= Intent(this, MainActivity2::class.java)
+            startActivity(main2)
+
         }
 
         // Area del Rectangulo
@@ -37,9 +48,11 @@ class MainActivity : AppCompatActivity() {
         val BtnAreaRectangulo = findViewById<Button>(R.id.btnAreaRectangulo)
         TextAreaRectangulo.text=""
 
+
         BtnAreaRectangulo.setOnClickListener {
-            val AreaRectangulo = EditBaseRec.text.toString().toInt() * EditAlturaRec.text.toString().toInt()
-            TextAreaRectangulo.text= AreaRectangulo.toString()
+            tipo=2
+            var area = areas( EditBaseRec.text.toString().toDouble(), EditAlturaRec.text.toString().toDouble(), 0.0, tipo)
+            TextAreaRectangulo.text= area.toString()
         }
 
 
@@ -52,19 +65,11 @@ class MainActivity : AppCompatActivity() {
         TextAreaCirculo.text=""
         TextPi.text= getString(R.string.pi_value)
 
+
         BtnAreaCirculo.setOnClickListener {
-            val AreaCirculo = 3.1416 * EditRadio.text.toString().toInt() * EditRadio.text.toString().toInt()
-            if( AreaCirculo.toDouble() > 2000){
-                val Descuento = AreaCirculo.toDouble() - (AreaCirculo.toDouble()*0.5)
-                TextAreaCirculo.text=
-                    "${AreaCirculo}es mayor a 2000 por lo tanto el descuento es de:${Descuento}"
-            }
-            else{
-                TextAreaCirculo.text= AreaCirculo.toString()
-            }
-
-
-
+            tipo=3
+            var area = areas( TextPi.text.toString().toDouble(), EditRadio.text.toString().toDouble(), 0.0, tipo)
+            TextAreaCirculo.text = area.toString()
         }
 
 
@@ -77,14 +82,48 @@ class MainActivity : AppCompatActivity() {
         val BtnAreaTrapecio = findViewById<Button>(R.id.btnAreaTrapecio)
         TextAreaTrapecio.text= ""
 
+
         BtnAreaTrapecio.setOnClickListener {
-            val AreaTrapecio = ((EditBaseMayor.text.toString().toInt() +EditBaseMenor.text.toString().toInt())/2)*EditAlturaTrap.text.toString().toInt()
-            TextAreaTrapecio.text= AreaTrapecio.toString()
+            tipo=4
+            var area = areas( EditBaseMayor.text.toString().toDouble(), EditBaseMenor.text.toString().toDouble(), EditAlturaTrap.text.toString().toDouble(), tipo)
+            TextAreaTrapecio.text = area.toString()
         }
 
 
 
     }
+
+    fun areas(x: Double, y: Double, z:Double, tipo: Int): Double {
+        var Area = 0.0
+        if(tipo == 1){
+            // x == base
+            // y == altura
+           Area = (x * y)/2
+
+        }
+        else if(tipo == 2){
+            // x == base
+            // y == altura
+            Area= x * y
+
+        }
+        else if(tipo == 3){
+            // x == pi
+            // y == radio
+            Area= x*y*y
+        }
+        else if(tipo == 4){
+            // x == base mayor
+            // y == base menor
+            // z == altura
+
+            Area = ((x+y)/2)*z
+        }
+        return Area
+
+    }
+
+
 }
 
 
